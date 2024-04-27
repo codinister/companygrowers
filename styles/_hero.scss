@@ -1,0 +1,58 @@
+.hero {
+  & > div:nth-of-type(1) {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50rem;
+    overflow: hidden;
+
+    & > div:nth-of-type(1) {
+      flex: 30rem 1 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+overflow: hidden;
+      &::after{
+        content: ''; 
+        display: block; 
+        width: 20rem; 
+        height: 20rem; 
+        background-color: var(--danger);
+        position: absolute; 
+        bottom: 4rem; 
+        left: -8rem;
+        border-radius: 50%;
+        opacity: .2;
+      }
+      & > div {
+        h1 {
+          margin-bottom: 3.2rem;
+          font-weight: 900;
+          color: var(--danger);
+          text-shadow: 0.2rem 0.2rem 0.7rem rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    & > div:nth-of-type(2) {
+      flex: 20rem 1 0;
+      position: relative;
+      background-color: #f2f2f2;
+      border-radius: 10rem 22rem 23rem 34rem;
+      transform: translateX(2rem);
+
+
+
+
+      & > div {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-40%) translateY(-40%);
+        height: 40rem;
+        width: 40rem;
+        
+      }
+    }
+  }
+}
