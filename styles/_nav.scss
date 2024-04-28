@@ -2,8 +2,17 @@
   nav {
     position: absolute;
     top: 0;
-   
+
+    padding-block: 2.4rem;
+
     width: 100%;
+
+    .active {
+      background-color: var(--danger);
+      color: white;
+      border-radius: 3rem;
+    }
+
     & > div {
       & > div {
         display: flex;
@@ -25,12 +34,11 @@
                 width: max-content;
                 font-size: 1.6rem;
                 padding-inline: 1.6rem;
-                padding-block: .8rem;
-                &:hover{
+                padding-block: 0.8rem;
+                &:hover {
                   background-color: var(--danger);
                   color: white;
-                  border-radius: 3rem; 
-          
+                  border-radius: 3rem;
                 }
               }
             }

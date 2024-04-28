@@ -27,8 +27,8 @@ const Nav = () => {
           <div>
             <Image
               src="/logo.jpg"
-              width="150"
-              height="97"
+              width="95"
+              height="47"
               alt=""
               className="logo"
             />
@@ -37,7 +37,7 @@ const Nav = () => {
           <div>
             <ul>
               <li>
-                <NavLinks url="/" name="Home" onClick={() => setShow(false)} />
+                <NavLinks url="/" name="Home" className="active" onClick={() => setShow(false)} />
               </li>
               <li>
                 <NavLinks

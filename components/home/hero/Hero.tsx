@@ -2,6 +2,7 @@
 
 import Readmore from '@/components/Readmore';
 import Nav from '@/components/nav/Nav';
+import Image from 'next/image';
 import React from 'react';
 
 const Hero = () => {
@@ -14,9 +15,21 @@ const Hero = () => {
           <div>
           <h1>Digital Marketing Agency</h1>
           <h6>Using Digital Tools Form Modern Marketing Advantages</h6>
-          <h6>Grow your business now!</h6>
+          <h4>Grow your business now!</h4>
 
           <Readmore name="Read more">Get Started</Readmore>
+
+          <div className="social-btn">
+            <a href="https://www.facebook.com" target="_blank">
+              <Image src="/facebook.jpg" width="60" height="60" alt="" />
+            </a>
+            <a href="https://www.instagram.com"  target="_blank">
+              <Image src="/instagram.jpg" width="60" height="60" alt="" />
+            </a>
+            <a href="https://www.twitter.com"  target="_blank">
+              <Image src="/x.jpg" width="60" height="60" alt="" />
+            </a>
+          </div>
           </div>
         </div>
         <div>
