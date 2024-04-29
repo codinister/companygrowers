@@ -20,13 +20,13 @@ const Hero = () => {
           <Readmore name="Read more">Get Started</Readmore>
 
           <div className="social-btn">
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://web.facebook.com/CompanyGrowers" target="_blank">
               <Image src="/facebook.jpg" width="40" height="36" alt="" />
             </a>
-            <a href="https://www.instagram.com"  target="_blank">
+            <a href="https://www.instagram.com/companygrowers/?hl=en"  target="_blank">
               <Image src="/instagram.jpg" width="40" height="36" alt="" />
             </a>
-            <a href="https://www.twitter.com"  target="_blank">
+            <a href="https://twitter.com/CompanyGrowers"  target="_blank">
               <Image src="/x.jpg" width="40" height="36" alt="" />
             </a>
           </div>

@@ -24,30 +24,39 @@ const Footer = () => {
             </div>
             <div>
               <span>
-                <i className="fa fa-envelope"></i>
+                <i className="fa fa-phone"></i>
               </span>
               <span>0205213590</span>
             </div>
 
             <div>
-              <span>
-                <i className="fa fa-facebook"></i>
-              </span>
-              <span>Facebook</span>
+              <a href="https://web.facebook.com/CompanyGrowers" target="_blank">
+                <span>
+                  <i className="fa fa-facebook"></i>
+                </span>
+                <span>Facebook</span>
+              </a>
             </div>
 
             <div>
-              <span>
-                <i className="fa fa-twitter"></i>
-              </span>
-              <span>Twitter</span>
+              <a
+                href="https://www.instagram.com/companygrowers/?hl=en"
+                target="_blank"
+              >
+                <span>
+                  <i className="fa fa-twitter"></i>
+                </span>
+                <span>Twitter</span>
+              </a>
             </div>
 
             <div>
-              <span>
-                <i className="fa fa-instagram"></i>
-              </span>
-              <span>Instagram</span>
+              <a href="https://twitter.com/CompanyGrowers" target="_blank">
+                <span>
+                  <i className="fa fa-instagram"></i>
+                </span>
+                <span>Instagram</span>
+              </a>
             </div>
           </div>
 

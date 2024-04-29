@@ -6,12 +6,12 @@ const Servicessection = () => {
       <h4>Our Services</h4>
 
       <div className="container">
-        <Servicescard name="Branding" fa="user" />
-        <Servicescard name="Website Design & Development" fa="user" />
-        <Servicescard name="Social Media Marketing" fa="user" />
-        <Servicescard name="Social Campaigns" fa="user" />
-        <Servicescard name="Graphic Designs" fa="user" />
-        <Servicescard name="Content Marketing" fa="user" />
+        <Servicescard name="Branding" fa="address-card" />
+        <Servicescard name="Website Design & Development" fa="globe" />
+        <Servicescard name="Social Media Marketing" fa="facebook" />
+        <Servicescard name="Social Campaigns" fa="bullhorn" />
+        <Servicescard name="Graphic Designs" fa="laptop" />
+        <Servicescard name="Content Marketing" fa="desktop" />
       </div>
     </div>
   );
