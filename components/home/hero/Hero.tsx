@@ -21,13 +21,13 @@ const Hero = () => {
 
           <div className="social-btn">
             <a href="https://www.facebook.com" target="_blank">
-              <Image src="/facebook.jpg" width="60" height="60" alt="" />
+              <Image src="/facebook.jpg" width="40" height="36" alt="" />
             </a>
             <a href="https://www.instagram.com"  target="_blank">
-              <Image src="/instagram.jpg" width="60" height="60" alt="" />
+              <Image src="/instagram.jpg" width="40" height="36" alt="" />
             </a>
             <a href="https://www.twitter.com"  target="_blank">
-              <Image src="/x.jpg" width="60" height="60" alt="" />
+              <Image src="/x.jpg" width="40" height="36" alt="" />
             </a>
           </div>
           </div>

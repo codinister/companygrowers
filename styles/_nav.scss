@@ -53,6 +53,14 @@
   }
 }
 
+
+
+
+
+
+
+
+
 @media (max-width: 35em) {
   nav {
     position: fixed;
@@ -157,10 +165,11 @@
       height: 100%;
       transform: translateX(-100%);
       transition: 0.2s;
+      top: 0;
     }
 
     .hamburger {
-      position: absolute;
+      position: fixed;
       width: 3rem;
       height: 3rem;
       left: 1.6rem;
