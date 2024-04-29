@@ -92,15 +92,15 @@
           padding-block: 2.4rem;
           text-align: center;
 
-          .social-btn{
-            display: flex; 
+          .social-btn {
+            display: flex;
             gap: 2.4rem;
             justify-content: center;
-            a{
-              display: block; 
-           
+            a {
+              display: block;
+
               border-radius: 50%;
-              box-shadow: .3rem .3rem 1.6rem rgba(0, 0, 0, 0.6);
+              box-shadow: 0.3rem 0.3rem 1.6rem rgba(0, 0, 0, 0.6);
             }
           }
           h1 {
