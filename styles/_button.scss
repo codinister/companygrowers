@@ -1,16 +1,17 @@
 .readmore {
   padding: 1rem;
-  border: solid 0.1rem var(--danger);
   border-radius: 2rem;
   text-align: center;
-  color: var(--danger);
   width: max-content;
-  margin-block: 2.4rem;
-  background-color: transparent;
-  cursor: pointer;
 
+  color: white;
+  background-color: var(--danger);
+  cursor: pointer;
+  border: solid 0.1rem var(--danger);
+  transition: .2s;
   &:hover {
-    background-color: var(--danger);
-    color: white;
+    background-color: transparent;
+    color: var(--danger);
+    border: solid 0.1rem var(--danger);
   }
 }

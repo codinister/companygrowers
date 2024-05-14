@@ -1,73 +1,42 @@
 @media (min-width: 35em) {
   .hero {
     & > div:nth-of-type(1) {
-      display: flex;
-      flex-wrap: wrap;
       height: 100vh;
-      overflow: hidden;
+      background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 1),
+          transparent
+        ),
+        url('/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      & > div:nth-of-type(1) {
-        flex: 30rem 1 0;
-        display: flex;
-        top: 20%;
-        padding-left: 6.4rem;
-        position: relative;
+      & > div {
         text-align: center;
-        overflow: hidden;
-
-        & > div {
-          height: 33rem;
-
-          h1 {
-            margin-block: 2.4rem;
-            font-weight: 900;
-            color: var(--danger);
-          }
-          h4 {
-            font-weight: bold;
-            color: var(--danger);
-            margin-top: 2rem;
-            font-size: 2rem;
-          }
-
-          & > div {
-            margin-top: 5.6rem;
-            display: flex;
-            gap: 3.2rem;
-            justify-content: center;
-            & > a {
-              display: block;
-              border-radius: 50%;
-              overflow: hidden;
-              box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.5);
-              display: grid;
-              place-items: center;
-              border: solid 0.4rem white;
-              height: 4rem;
-              width: 4rem;
-            }
-          }
+        padding: 4rem;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, .8),
+          transparent
+        );
+        h1 {
+          color: var(--danger);
+          font-weight: 900;
+          margin-bottom: 2.4rem;
+        }
+        h6{
+          margin-block: 2.4rem;
+        }
+        h4{
+          margin-bottom: 3.2rem;
         }
       }
 
-      & > div:nth-of-type(2) {
-        flex: 20rem 1 0;
-        position: relative;
-        background: linear-gradient(to bottom, white, var(--grey));
-        border-radius: 10rem 22rem 23rem 34rem;
-        transform: translateX(2rem);
 
-        box-shadow: -1rem 1rem 7rem rgba(0, 0, 0, 0.2);
 
-        & > div {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translateX(-40%) translateY(-40%);
-          height: 40rem;
-          width: 40rem;
-        }
-      }
     }
   }
 }
