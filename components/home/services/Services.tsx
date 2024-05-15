@@ -2,6 +2,68 @@ import React from 'react';
 import Servicecard from './Servicecard';
 
 const Services = () => {
+  const data = [
+    {
+      title: 'Digital Marketing',
+      mainImage: '',
+      img1: '',
+      img2: '',
+      img3: '',
+      img4: '',
+      img5: '',
+      serv1: 'Social Media Marketing',
+      serv2: 'Social Campaigns',
+      serv3: 'Pay-Per-Click (PPC) Advertising',
+      serv4: 'Search Engine Optimization (SEO',
+      serv5: 'Content Marketing',
+    },
+
+    {
+      title: 'Web Design and Development',
+      mainImage: '',
+      img1: '',
+      img2: '',
+      img3: '',
+      img4: '',
+      img5: '',
+      serv1: 'Custom Web Design',
+      serv2: 'Responsive web design',
+      serv3: 'Front-end Developmen',
+      serv4: 'Back-end Development',
+      serv5: 'Website Maintenance and Support',
+    },
+
+    {
+      title: 'Branding',
+      mainImage: '',
+      img1: '',
+      img2: '',
+      img3: '',
+      img4: '',
+      img5: '',
+      serv1: ' Brand Strategy',
+      serv2: 'Visual Identity Development',
+      serv3: 'Brand Activation',
+      serv4: 'Brand Positioning',
+      serv5: 'Brand Monitoring and Management',
+    },
+
+    {
+      title: ' Digital Media',
+      mainImage: '',
+      img1: '',
+      img2: '',
+      img3: '',
+      img4: '',
+      img5: '',
+      serv1: 'Motion Graphics',
+      serv2: 'UI/UX Design',
+      serv3: '',
+      serv4: '',
+      serv5: '',
+    },
+  ];
+
   return (
     <section className="services">
       <div className="container">
@@ -16,44 +78,24 @@ const Services = () => {
       </div>
 
       <div className="container">
-        <Servicecard
-          img="/imgs/graphics.jpg"
-          title="Digital Media"
-          bullet1="Graphic Design"
-          bullet2="Motion Graphics"
-          bullet3="UI/UX Design"
-          bullet4="Photography"
-          bullet5="Videography"
-        />
-        <Servicecard
-          img="/imgs/branding.jpg"
-          title="Branding"
-          bullet1="Graphic Design"
-          bullet2="Motion Graphics"
-          bullet3="UI/UX Design"
-          bullet4="Photography"
-          bullet5="Videography"
-        />
+        {data.map((v, k) => {
+          const obj = {
+            title: v.title,
+            mainImage: v.mainImage,
+            img1: v.img1,
+            img2: v.img2,
+            img3: v.img3,
+            img4: v.img4,
+            img5: v.img5,
+            serv1: v.serv1,
+            serv2: v.serv2,
+            serv3: v.serv3,
+            serv4: v.serv4,
+            serv5: v.serv5,
+          };
 
-        <Servicecard
-          img="/imgs/digital.jpg"
-          title="Branding"
-          bullet1="Graphic Design"
-          bullet2="Motion Graphics"
-          bullet3="UI/UX Design"
-          bullet4="Photography"
-          bullet5="Videography"
-        />
-
-        <Servicecard
-          img="/imgs/webdesign.jpg"
-          title="Branding"
-          bullet1="Graphic Design"
-          bullet2="Motion Graphics"
-          bullet3="UI/UX Design"
-          bullet4="Photography"
-          bullet5="Videography"
-        />
+          return <Servicecard key={k} obj={obj} />;
+        })}
       </div>
     </section>
   );

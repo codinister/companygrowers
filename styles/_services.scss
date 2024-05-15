@@ -28,25 +28,9 @@
   }
 }
 
+
+
+
 .servicecard {
-  height: 30rem;
-  position: relative;
-  overflow: hidden;
-
-  & > div:nth-of-type(1) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40rem;
-    height: 20rem;
-    background-color: rgba(254,106,68, 1);
-padding: 2rem;
-    ul{
-
-      color: white;
-  
-    }
-  }
-
 
 }

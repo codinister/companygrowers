@@ -1,45 +1,77 @@
 import React from 'react';
 
 type ServicecardType = {
-  img: string;
-  title: string;
-  bullet1: string;
-  bullet2: string;
-  bullet3: string;
-  bullet4: string;
-  bullet5: string;
+  obj: {
+    title: string;
+    mainImage: string;
+    img1: string;
+    img2: string;
+    img3: string;
+    img4: string;
+    img5: string;
+    serv1: string;
+    serv2: string;
+    serv3: string;
+    serv4: string;
+    serv5: string;
+  };
 };
 
-const Servicecard = ({
-  img,
-  title,
-  bullet1,
-  bullet2,
-  bullet3,
-  bullet4,
-  bullet5,
-}: ServicecardType) => {
-  return (
+type ServBoxType = {
+  img: string;
+  title: string;
+};
+
+const ServBox = ({ img, title }: ServBoxType) => (
+  <div className="servbx">
     <div
-      className="servicecard"
       style={{
         backgroundImage: `url(${img})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-    >
-      <div>
+    ></div>
+    <div>
       <h4>{title}</h4>
-        <ul>
-          <li>{bullet1}</li>
-          <li>{bullet2}</li>
-          <li>{bullet3}</li>
-          <li>{bullet4}</li>
-          <li>{bullet5}</li>
-        </ul>
+    </div>
+  </div>
+);
+
+const Servicecard = ({ obj }: ServicecardType) => {
+  const {
+    title,
+    mainImage,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    serv1,
+    serv2,
+    serv3,
+    serv4,
+    serv5,
+  } = obj;
+
+  return (
+    <div className="servicecard">
+      <div
+        style={{
+          backgroundImage: `url(${mainImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <h4>{title}</h4>
       </div>
 
-
+      <div>
+        <ServBox title={serv1} img={img1} />
+        <ServBox title={serv2} img={img2} />
+        <ServBox title={serv3} img={img3} />
+        <ServBox title={serv4} img={img4} />
+        <ServBox title={serv5} img={img5} />
+      </div>
     </div>
   );
 };
