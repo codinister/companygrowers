@@ -32,7 +32,7 @@ const ServBox = ({ img, title }: ServBoxType) => (
       }}
     ></div>
     <div>
-      <h4>{title}</h4>
+    {title}
     </div>
   </div>
 );
@@ -62,7 +62,7 @@ const Servicecard = ({ obj }: ServicecardType) => {
           backgroundPosition: 'center',
         }}
       >
-        <h4>{title}</h4>
+        <h5>{title}</h5>
       </div>
 
       <div>

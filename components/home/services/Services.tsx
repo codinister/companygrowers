@@ -5,12 +5,12 @@ const Services = () => {
   const data = [
     {
       title: 'Digital Marketing',
-      mainImage: '',
-      img1: '',
-      img2: '',
-      img3: '',
-      img4: '',
-      img5: '',
+      mainImage: '/digital/digital.jpg',
+      img1: '/digital/one.jpg',
+      img2: '/digital/two.jpg',
+      img3: '/digital/three.png',
+      img4: '/digital/four.png',
+      img5: '/digital/five.jpg',
       serv1: 'Social Media Marketing',
       serv2: 'Social Campaigns',
       serv3: 'Pay-Per-Click (PPC) Advertising',
@@ -20,7 +20,7 @@ const Services = () => {
 
     {
       title: 'Web Design and Development',
-      mainImage: '',
+      mainImage: '/services/webdesign.jpg',
       img1: '',
       img2: '',
       img3: '',
@@ -35,7 +35,7 @@ const Services = () => {
 
     {
       title: 'Branding',
-      mainImage: '',
+      mainImage: '/services/branding.jpg',
       img1: '',
       img2: '',
       img3: '',
@@ -50,17 +50,17 @@ const Services = () => {
 
     {
       title: ' Digital Media',
-      mainImage: '',
+      mainImage: '/services/graphics.jpg',
       img1: '',
       img2: '',
       img3: '',
       img4: '',
       img5: '',
-      serv1: 'Motion Graphics',
-      serv2: 'UI/UX Design',
-      serv3: '',
-      serv4: '',
-      serv5: '',
+      serv1: 'Graphic Design',
+      serv2: 'Motion Graphics',
+      serv3: 'UI/UX Design',
+      serv4: 'Photography',
+      serv5: 'Videography',
     },
   ];
 

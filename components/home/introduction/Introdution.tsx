@@ -17,7 +17,7 @@ const Introduction = () => {
         </div>
         <div
           style={{
-            backgroundImage: `url('/imgs/lady.jpeg')`,
+            backgroundImage: `url('/introduction/five.jpeg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -27,28 +27,28 @@ const Introduction = () => {
       <div>
         <div
           style={{
-            backgroundImage: `url('/imgs/branding.jpg')`,
+            backgroundImage: `url('/introduction/one.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         ></div>
         <div
           style={{
-            backgroundImage: `url('/imgs/graphics.jpg')`,
+            backgroundImage: `url('/introduction/two.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         ></div>
         <div
           style={{
-            backgroundImage: `url('/imgs/webdesign.jpg')`,
+            backgroundImage: `url('/introduction/three.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         ></div>
         <div
           style={{
-            backgroundImage: `url('/imgs/digital.jpg')`,
+            backgroundImage: `url('/introduction/four.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
