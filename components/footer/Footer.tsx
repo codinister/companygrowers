@@ -1,4 +1,3 @@
-
 import ContactForm from '../ContactForm';
 
 type SocialsType = {
@@ -23,7 +22,7 @@ const Footer = () => {
   return (
     <footer>
       <div>
- <ContactForm />
+        <ContactForm />
       </div>
       <div>
         <div>
