@@ -1,68 +1,51 @@
-import Image from 'next/image';
+
+import ContactForm from '../ContactForm';
+
+type SocialsType = {
+  fa: string;
+  name: string;
+  link: string;
+};
+
+const Socials = ({ fa, name, link = '' }: SocialsType) => {
+  const links = link.length > 0 ? <a href={link}>{name}</a> : <div>{name}</div>;
+  return (
+    <div className="socials">
+      <div>
+        <i className={`fa ${fa}`}></i>
+      </div>
+      {links}
+    </div>
+  );
+};
 
 const Footer = () => {
   return (
     <footer>
       <div>
-        <div>
-          <div>
-            <Image src="/logo.jpg" width="120" height="80" alt="Logo" />
-            <h4>Company Growers</h4>
-            <p>Using Digital Tools Form Modern Marketing Advantages</p>
-          </div>
-        </div>
+ <ContactForm />
       </div>
-
       <div>
         <div>
-          <div>
-            <div>
-              <span>
-                <i className="fa fa-envelope"></i>
-              </span>
-              <span>info@companygrowers.com</span>
-            </div>
-            <div>
-              <span>
-                <i className="fa fa-phone"></i>
-              </span>
-              <span>0205213590</span>
-            </div>
+          <h4>Connect with us</h4>
 
-            <div>
-              <a href="https://web.facebook.com/CompanyGrowers" target="_blank">
-                <span>
-                  <i className="fa fa-facebook"></i>
-                </span>
-                <span>Facebook</span>
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="https://www.instagram.com/companygrowers/?hl=en"
-                target="_blank"
-              >
-                <span>
-                  <i className="fa fa-twitter"></i>
-                </span>
-                <span>Twitter</span>
-              </a>
-            </div>
-
-            <div>
-              <a href="https://twitter.com/CompanyGrowers" target="_blank">
-                <span>
-                  <i className="fa fa-instagram"></i>
-                </span>
-                <span>Instagram</span>
-              </a>
-            </div>
-          </div>
-
-          <div className="copyright">
-            All rights reserved &copy; 2024 www.companygrowers.com
-          </div>
+          <Socials fa="fa-phone" name="0205213590" link="" />
+          <Socials fa="fa-envelope" name="info@companygrowers.com" link="" />
+          <Socials
+            fa="fa-facebook"
+            name="Facebook"
+            link="https://web.facebook.com/CompanyGrowers"
+          />
+          <Socials
+            fa="fa-twitter"
+            name="Twitter"
+            link="https://twitter.com/CompanyGrowers"
+          />
+          <Socials
+            fa="fa-instagram"
+            name="Instagram"
+            link="https://www.instagram.com/companygrowers/?hl=en"
+          />
         </div>
       </div>
     </footer>

@@ -3,7 +3,7 @@ import Clientslogos from '@/components/Clientslogos';
 const Successsection = () => {
   return (
     <div className="successsection">
-      <h4>Success Stories</h4>
+      <h2>Success Stories</h2>
       <div className="container">
         <Clientslogos
           name="GSSTI"
