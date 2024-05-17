@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 
 type ServicecardType = {
   obj: {
@@ -20,10 +21,19 @@ type ServicecardType = {
 type ServBoxType = {
   img: string;
   title: string;
+  setTitle: Function;
+  setImg: Function;
 };
 
-const ServBox = ({ img, title }: ServBoxType) => (
-  <div className="servbx">
+const ServBox = ({ img, title,  setTitle, setImg }: ServBoxType) => {
+
+  const handleClick = ()=>{
+    setTitle(title)
+    setImg(img)
+  }
+
+return (
+  <div className="servbx" onClick={handleClick}>
     <div
       style={{
         backgroundImage: `url(${img})`,
@@ -31,13 +41,15 @@ const ServBox = ({ img, title }: ServBoxType) => (
         backgroundPosition: 'center',
       }}
     ></div>
-    <div>
-    {title}
-    </div>
+    <div>{title}</div>
   </div>
 );
+}
 
 const Servicecard = ({ obj }: ServicecardType) => {
+  const [imgdata, setImg] = useState('');
+  const [titledata, setTitle] = useState('');
+
   const {
     title,
     mainImage,
@@ -57,20 +69,20 @@ const Servicecard = ({ obj }: ServicecardType) => {
     <div className="servicecard">
       <div
         style={{
-          backgroundImage: `url(${mainImage})`,
+          backgroundImage: `url(${imgdata.length > 0? imgdata : mainImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <h5>{title}</h5>
+        <h5>{titledata.length > 0 ? titledata : title}</h5>
       </div>
 
       <div>
-        <ServBox title={serv1} img={img1} />
-        <ServBox title={serv2} img={img2} />
-        <ServBox title={serv3} img={img3} />
-        <ServBox title={serv4} img={img4} />
-        <ServBox title={serv5} img={img5} />
+        <ServBox title={serv1} img={img1} setTitle={setTitle} setImg={setImg} />
+        <ServBox title={serv2} img={img2} setTitle={setTitle} setImg={setImg} />
+        <ServBox title={serv3} img={img3} setTitle={setTitle} setImg={setImg} />
+        <ServBox title={serv4} img={img4} setTitle={setTitle} setImg={setImg} />
+        <ServBox title={serv5} img={img5} setTitle={setTitle} setImg={setImg} />
       </div>
     </div>
   );

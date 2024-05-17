@@ -7,12 +7,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
   font-size: 62.5%;
-
-
   --danger: #fe6a44;
   --grey: #e3e6eb;
   --white: #fff;
@@ -29,7 +28,6 @@ body {
   position: relative;
   color: #555;
   line-height: 2.4rem;
-
   font-family: 'Vollkorn', serif;
   font-weight: 400;
   font-size: 1.6rem;
