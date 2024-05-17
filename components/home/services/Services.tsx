@@ -20,7 +20,7 @@ const Services = () => {
 
     {
       title: 'Web Design and Development',
-      mainImage: '/services/webdesign.jpg',
+      mainImage: '/web/webdesign.jpg',
       img1: '/web/one.png',
       img2: '/web/two.jpg',
       img3: '/web/three.png',
@@ -35,7 +35,7 @@ const Services = () => {
 
     {
       title: 'Branding',
-      mainImage: '/services/branding.jpg',
+      mainImage: '/brand/branding.jpg',
       img1: '/brand/one.png',
       img2: '/brand/two.png',
       img3: '/brand/three.jpg',
@@ -50,8 +50,8 @@ const Services = () => {
 
     {
       title: ' Digital Media',
-      mainImage: '/services/graphics.jpg',
-      img1: '',
+      mainImage: '/graphics/graphics.jpg',
+      img1: '/graphics/one.jpg',
       img2: '',
       img3: '',
       img4: '',

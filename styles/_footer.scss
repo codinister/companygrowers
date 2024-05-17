@@ -68,3 +68,63 @@
     }
   }
 }
+
+
+
+
+
+
+@media (max-width: 35em) {
+  footer {
+    background-color: var(--danger);
+
+
+    position: relative;
+
+
+    & > div:nth-of-type(1) {
+      height: 30rem;
+      z-index: 1;
+background-color: #444;
+padding-top: 2.4rem;
+    }
+
+    & > div:nth-of-type(2) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      h4 {
+        margin-block: 2.4rem;
+      }
+      .socials {
+        display: flex;
+        gap: 0.8rem;
+        & > div {
+          margin-bottom: 0.8rem;
+        }
+
+        & > div:nth-of-type(2) {
+          display: flex;
+          align-items: center;
+        }
+
+        a {
+          color: white;
+        }
+        i {
+          display: block;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          border: solid 0.1rem white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+
