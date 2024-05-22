@@ -20,7 +20,7 @@ const Socials = ({ fa, name, link = '' }: SocialsType) => {
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       <div>
         <ContactForm />
       </div>

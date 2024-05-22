@@ -53,10 +53,13 @@ const Nav = () => {
                   onClick={() => setShow(false)}
                 />
               </li>
+
+
+
               <li>
                 <NavLinks
                   url="/"
-                  name="Success Stories"
+                  name="Clientele"
                   onClick={() => setShow(false)}
                 />
               </li>

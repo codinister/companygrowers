@@ -24,36 +24,6 @@ const Introduction = () => {
         ></div>
       </div>
 
-      <div>
-        <div
-          style={{
-            backgroundImage: `url('/introduction/one.jpg')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        ></div>
-        <div
-          style={{
-            backgroundImage: `url('/introduction/two.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        ></div>
-        <div
-          style={{
-            backgroundImage: `url('/introduction/three.jpg')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        ></div>
-        <div
-          style={{
-            backgroundImage: `url('/introduction/four.jpg')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        ></div>
-      </div>
     </section>
   );
 };

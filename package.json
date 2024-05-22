@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.4.2",
     "@prisma/client": "^5.11.0",
     "@reduxjs/toolkit": "^2.2.2",
     "@tanstack/react-table": "^8.15.0",
@@ -30,6 +31,7 @@
     "react-youtube": "^10.1.0",
     "react-youtube-background": "^1.0.0",
     "redux-persist": "^6.0.0",
+    "resend": "^3.2.0",
     "sass": "^1.72.0",
     "zod": "^3.23.8"
   },

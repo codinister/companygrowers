@@ -74,9 +74,9 @@ const Servicecard = ({ obj }: ServicecardType) => {
           backgroundPosition: 'center',
         }}
       >
-        <h5>{titledata.length > 0 ? titledata : title}</h5>
+  
       </div>
-
+      <h5>{titledata.length > 0 ? titledata : title}</h5>
       <div>
         <ServBox title={serv1} img={img1} setTitle={setTitle} setImg={setImg} />
         <ServBox title={serv2} img={img2} setTitle={setTitle} setImg={setImg} />

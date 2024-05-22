@@ -1,58 +1,70 @@
 @media (min-width: 35em) {
+  .contactform {
+    width: 70%;
 
-.contactform {
-  width: 70%;
+    margin-inline: auto;
 
-  margin-inline: auto;
-
-  button {
-    width: 100%;
-  }
-  h4 {
-    margin-bottom: 2.4rem;
-    text-align: center;
-    color: var(--danger);
-  }
-  .input-control {
-    position: relative;
-    margin-bottom: 1.6rem;
-    input {
+    button {
       width: 100%;
-      padding-block: 0.8rem;
+    }
+    h4 {
+      margin-bottom: 2.4rem;
+      text-align: center;
+      color: var(--danger);
+    }
+    .input-control {
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 0.8rem;
+        border: solid 0.1rem #444;
+        outline: none;
+      }
+
+      input:focus + label {
+        position: absolute;
+        top: -2rem;
+        transition: 0.2s;
+        font-size: 1rem;
+      }
+
+      input:not(:placeholder-shown) + label {
+        position: absolute;
+        top: -2rem;
+        font-size: 1rem;
+      }
+
+      label {
+        position: absolute;
+        top: 0.4rem;
+        left: 0.8rem;
+      }
+    }
+
+    textarea {
       border: solid 0.1rem #444;
+      width: 100%;
+      padding: 0.8rem;
+
       outline: none;
     }
 
-    label {
-      position: absolute;
-      top: 0.4rem;
-      left: 0.8rem;
+    .errors {
+      color: red;
+      display: block;
+      margin-bottom: 0.8rem;
     }
-  }
 
-  textarea {
-    border: solid 0.1rem #444;
-    width: 100%;
-    padding-block: 0.8rem;
-    height: 5rem;
-    margin-bottom: 0.6rem;
-    outline: none;
   }
 }
-
-
-}
-
-
-
 
 @media (max-width: 35em) {
-
   .contactform {
     width: 70%;
-  
+
     margin-inline: auto;
-  
+
     button {
       width: 100%;
     }
@@ -70,14 +82,14 @@
         border: solid 0.1rem #444;
         outline: none;
       }
-  
+
       label {
         position: absolute;
         top: 0.4rem;
         left: 0.8rem;
       }
     }
-  
+
     textarea {
       border: solid 0.1rem #444;
       width: 100%;
@@ -87,6 +99,4 @@
       outline: none;
     }
   }
-  
-  
-  }
+}

@@ -5,7 +5,7 @@ const Services = () => {
   const data = [
     {
       title: 'Digital Marketing',
-      mainImage: '/digital/digital.jpg',
+      mainImage: '/digital/digital.jpeg',
       img1: '/digital/four.png',
       img2: '/digital/one.jpg',
       img3: '/digital/five.jpg',
