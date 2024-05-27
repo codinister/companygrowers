@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import Readmore from './Readmore';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -6,9 +6,18 @@ import { emailSchema } from './zodSchema';
 import Errors from './Errors';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTransition } from 'react';
-
+import sendMail from './sendMail';
+import { BeatLoader } from 'react-spinners';
 
 const ContactForm = () => {
+  type Errtype = any;
+  type Succtype = boolean | undefined;
+
+  const [err, setErr] = useState<Errtype>('');
+  const [success, setSuccess] = useState<Succtype>(false);
+
+  const closeBox = () => setSuccess(false);
+
   const {
     register,
     handleSubmit,
@@ -22,20 +31,39 @@ const ContactForm = () => {
     },
   });
 
-
-  const [isPending,startTransition] = useTransition()
+  const [isPending, startTransition] = useTransition();
 
   const formSubmit = async (val: z.infer<typeof emailSchema>) => {
+    startTransition(() => {
+      sendMail(val)
+        .then((data) => {
+          const success = data?.success;
+          const errors = data?.error;
 
-    console.log(val)
+          setSuccess(success);
+          setErr(errors);
+        })
+        .catch((err) => console.log(err));
+    });
   };
+
+  if (success) {
+    return (
+      <div className="successbox">
+        <div>
+          <button onClick={closeBox} title="Close">X</button>
+        </div>
+        <div>Email sent!</div>
+      </div>
+    );
+  }
 
   return (
     <div className="contactform">
       <form onSubmit={handleSubmit(formSubmit)}>
         <h4>Make enquiry</h4>
 
-        <Errors error="" />
+        <Errors error={err} />
 
         <div className="input-control">
           <input type="text" id="email" placeholder="" {...register('email')} />
@@ -64,7 +92,15 @@ const ContactForm = () => {
           <Errors error={errors.message?.message} />
         </div>
 
-        <Readmore name="Read more">Send</Readmore>
+        <div className="btn-box">
+          {isPending ? (
+            <BeatLoader />
+          ) : (
+            <Readmore disabled={isPending} name="Read more">
+              Send
+            </Readmore>
+          )}
+        </div>
       </form>
     </div>
   );

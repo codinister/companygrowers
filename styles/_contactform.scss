@@ -1,4 +1,7 @@
 @media (min-width: 35em) {
+  
+  
+  
   .contactform {
     width: 70%;
 
@@ -53,9 +56,39 @@
     .errors {
       color: red;
       display: block;
-      margin-bottom: 0.8rem;
+      margin-bottom: 1.6rem;
     }
 
+    .btn-box {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .successbox {
+    width: 40rem;
+    height: 15rem;
+    box-shadow: 0.7rem 0.7rem 2rem rgba(0, 0, 0, 0.2);
+    margin-inline: auto;
+    & > div:nth-of-type(1) {
+      text-align: right;
+      padding: 1.6rem;
+      button {
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+    }
+
+    & > div:nth-of-type(2) {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: green;
+      font-size: 2.4rem;
+    }
   }
 }
 

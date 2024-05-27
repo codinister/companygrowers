@@ -45,11 +45,13 @@
     }
 
     h5 {
-      font-size: 1.6rem;
-      color: var(--danger);
+      font-size: 1.2rem;
+      color: white;
       text-align: center;
       margin-inline: auto;
-      font-weight: bold;
+      font-weight: 900;
+      background-color: var(--danger);
+      padding-block: .4rem;
     }
 
     & > div:nth-of-type(2) {

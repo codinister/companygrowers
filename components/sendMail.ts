@@ -1,14 +1,27 @@
-import {z} from 'zod'
-import resend from 'resend'
-import { emailSchema } from './zodSchema'
+'use server';
 
+import { z } from 'zod';
+import { Resend } from 'resend';
+import { emailSchema } from './zodSchema';
 
-const sendMail = (val: z.infer<typeof emailSchema>) => {
+const resend = new Resend(process.env.RESEND_API_KEY);
+const sendMail = async (val: z.infer<typeof emailSchema>) => {
+  const info = emailSchema.safeParse(val);
 
-    const info = emailSchema.safeParse(val)
+  if (!info.success) return { error: info };
 
-    if(!info) return {error: ''}
+  const { email, subject, message } = info.data;
 
-}
+  const emailMessage = [`From: ${email}`, message].join('\n\n');
 
-export default sendMail
+  await resend.emails.send({
+    from: 'onboarding@resend.dev',
+    to: 'codinister@gmail.com',
+    subject,
+    html: `<p>${emailMessage}</p>`,
+  });
+
+  return { success: true };
+};
+
+export default sendMail;
