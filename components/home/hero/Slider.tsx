@@ -44,14 +44,17 @@ const Slider = ({ data, SLIDER_HEIGHT }: SliderType) => {
   //   return () => window.removeEventListener('resize', handleResize);
   // }, []);
 
+
+
   return (
     <div className="slide-container">
       <Slide
 
-      // autoplay={false}
-      // onChange={function noRefCheck(){}}
-      // onStartChange={function noRefCheck(){}}
-      >
+        // autoplay={false}
+        // onChange={function noRefCheck(){}}
+        // onStartChange={function noRefCheck(){}}
+        >
+
         {images.map((fadeImage, index) => (
           <div
             className="each-slide-effect"
@@ -59,9 +62,9 @@ const Slider = ({ data, SLIDER_HEIGHT }: SliderType) => {
             style={{
               backgroundImage: `url(${fadeImage.url})`,
               backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: `${SLIDER_HEIGHT}`,
-              width:'100%'
+              backgroundPosition: '',
+         
+              width: '100%',
             }}
           ></div>
         ))}

@@ -18,13 +18,12 @@ const Hero = () => {
   return (
     <div className="hero">
       <Slider data={obj} SLIDER_HEIGHT="100vh" />
-
+      
       <div>
         <div>
           <h1>Digital Marketing Agency</h1>
           <h6>Using Digital Tools For State-Of-The-Art Marketing Advantage</h6>
           <h4>Grow your business now!</h4>
-   
         </div>
       </div>
 

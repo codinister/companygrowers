@@ -8,14 +8,12 @@
       margin-bottom: 3.2rem;
     }
 
-    &>div:nth-of-type(1){
-  width: 60rem; 
-  margin-bottom: 6.4rem;
-  margin-inline: auto;
-  text-align: center;
+    & > div:nth-of-type(1) {
+      width: 60rem;
+      margin-bottom: 6.4rem;
+      margin-inline: auto;
+      text-align: center;
     }
-
-
 
     & > div:nth-of-type(2) {
       display: flex;
@@ -54,7 +52,6 @@
     }
 
     &::before {
-
       content: '';
       display: block;
       position: absolute;
@@ -70,11 +67,6 @@
   }
 }
 
-
-
-
-
-
 @media (max-width: 35em) {
   .successsection {
     overflow: hidden;
@@ -84,6 +76,10 @@
       text-align: center;
       margin-bottom: 3.2rem;
     }
+    & > div:nth-of-type(1) {
+      padding: 2.4rem;
+    }
+
     & > div {
       display: flex;
       gap: 4rem;
@@ -121,7 +117,6 @@
     }
 
     &::before {
-
       content: '';
       display: block;
       position: absolute;
@@ -136,5 +131,3 @@
     }
   }
 }
-
-
